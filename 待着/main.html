@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>待着,只有少数人知道</title>
+    <link rel="stylesheet/less" href="less/main.less"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body>
+
+<div id="header">
+    <div class="top">
+        <div class="logo"></div>
+        <ul class="list">
+            <li data-headeranchors="#page1"><a class="bg" href="#page1">首页</a></li>
+            <li data-headeranchors="#page2"><a href="#page2">体验</a></li>
+            <li data-headeranchors="#page3"><a href="#page3">社区</a></li>
+            <li data-headeranchors="#page4"><a href="#page4">状态</a></li>
+            <li><a href="html/stay.html">待法</a></li>
+            <li class="client"><a href="#">待着客户端<span class="addRed">New</span></a>
+                <style>
+                    /*#bag {position: absolute;top:20px;width:270px;height: 310px; display:none;}*/
+                    .nav_appDown{display:none;position:relative;left:-88px; top:-6px; width:0; height:0; padding:0; color:#fff;}
+                    .nav_appDown .nav_appbox{width:0; height:0; position:relative;}
+                    .nav_appDown .nav_appbox .nav_arrow{position:absolute; left:130px; top:-2px; width:0; height:0; border:10px solid transparent; border-bottom-color: #000; filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8;}
+                    .nav_appDown .nav_appbox .nav_contentbg{position:absolute; top:18px; width:270px; height:260px; background:#000; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8;}
+                    .nav_appDown .nav_appbox .nav_content{position:absolute; top:40px; left:20px; width:230px; filter:alpha(opacity=100); -moz-opacity:1; opacity:1;}
+                    .nav_appDown .nav_appbox .nav_content .nav_appicon{padding-bottom:90px; border-bottom:1px solid #5b5b5b;}
+                    .nav_appDown .nav_appbox .nav_content .nav_appicon img{float:left; margin-right:15px;}
+                    .nav_appDown .nav_appbox .nav_content .nav_appicon p{float:left;width:150px;line-height:18px;padding-top:23px;}
+                    .nav_appDown .nav_appbox .nav_content .nav_applink{padding-top:20px;}
+                    .nav_appDown .nav_appbox .nav_content .nav_applink .link{float:left;width:142px;}
+                    .nav_appDown .nav_appbox .nav_content .nav_applink .qrcode{float:left;width:88px;text-align:center;font-size:14px;}
+                </style>
+                <!--<div id="bag">-->
+                    <div class="nav_appDown">
+                        <div class="nav_appbox">
+                            <div class="nav_arrow"></div>
+                            <div class="nav_contentbg"></div>
+                            <div class="nav_content">
+                                <div class="nav_appicon">
+                                    <img src="image/nav_appicon.png" />
+                                    <p>做无用之事<br>享受无所事事的快乐</p>
+                                </div>
+                                <div class="nav_applink">
+                                    <div class="link">
+                                        <a href="http://www.daizhe.cn/app/down?type=1&dz_from=daohang&dz_anchor=1" target="_blank" style="padding:0"><img src="image/btn_appstore.png"></a>
+                                        <a href="http://www.daizhe.cn/app/down?type=2&dz_from=daohang&dz_anchor=1" target="_blank" style="padding:0;margin-top:8px;"><img src="image/btn_android.png"></a>
+                                    </div>
+                                    <div class="qrcode">
+                                        <img src="http://cache1.daizhe.cn/qrcode/81897d03fc0a1bb99193fb65631068b8_5_1.png" width="88" height="88" />
+                                        <p>扫码直接下载</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--</div>-->
+
+
+            </li>
+        </ul>
+
+        <div class="refer">
+            <div class="search">
+                <input class="searBtn" type="text" placeholder="Search"/>
+                <img class="big" src="image/searBtn.png" alt="">
+            </div>
+            <a href="html/land.html">登录</a>
+            <a href="html/register.html">注册</a>
+            <input class="experience" type="submit" value="发起体验">
+        </div>
+    </div>
+
+</div>
+<div id="fullpage">
+
+    <!----------第一屏-------->
+    <div class="section fs_numone">
+        <div id="banner">
+            <div class="ban_one bg ban"></div>
+
+            <div class="ban_two ban">
+                <div class="bt_word">
+                    <h1>浪费这只此一次的人生</h1>
+                    <div class="btw_text">
+                        <p>
+                            总要给自己机会做点无用又有趣的事情。<br />
+                            一个下午，可以“偷闲”；一个假期，足以“慢旅”；
+                            一种态度，即是“话题”。
+                        </p>
+                    </div>
+                    <a target="_blank" href="#" class="btw_aa">现在体验</a>
+                </div>
+            </div>
+
+            <div class="ban_three ban">
+                <div class="bt_word">
+                    <h1>人够特别？事儿够特别？地方够特别？</h1>
+                    <div class="btw_text">
+                        <p>
+                            发起体验，选拔你钟意的体验官，面对面认识你或你的品牌，<br />
+                            TA还会给出最动人的“体验报告”！
+                        </p>
+                    </div>
+                    <a target="_blank" href="#" class="btw_aa">发起体验</a>
+                </div>
+            </div>
+
+            <div class="ban_four ban">
+                <div class="bt_word">
+                    <h1>回顾过去一年，你有什么想说的？</h1>
+                    <div class="btw_text">
+                        <p>
+                            属于每个人的2015，转眼间就要画上句号了。 <br />
+                            辞旧迎新之际，在待着上写下“你的2015”吧。
+                        </p>
+                    </div>
+                    <a target="_blank" href="#" class="btw_aa">立即参与</a>
+                </div>
+            </div>
+
+            <div class="ban_five ban">
+                <div class="bt_word">
+                    <h1>一周那么几天，走一站路回家</h1>
+                    <div class="btw_text">
+                        <p>
+                            走一站路回家，一路上有春雨浸润的土地，有赵大叔的煎饼摊子…<br />
+                            你可能得走40分钟，但是却格外轻松，听音乐，吹吹风，双脚走得发热。<br />
+                            没有人挤，不为赶时间，只和自己，走着。
+                        </p>
+                    </div>
+                    <a target="_blank" href="#" class="btw_aa">立即参与</a>
+                </div>
+            </div>
+
+            <div class="ban_six ban">
+                <div class="bt_word">
+                    <h1>优美的高于生活——艺术节纪念T恤&帆布袋</h1>
+                    <div class="btw_text">
+                        <p>
+                            待着生活艺术节第一季的主题是：理想生活，而理想生活是优美的高于生活。<br />
+                            待着专门设计了一批T恤和帆布包，把藏在我们心底的信念，穿在身上，背在肩膀吧。                         </p>
+                    </div>
+                    <a target="_blank" href="#" class="btw_aa">查看详情</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="javascript:;" class="left"></a>
+        <a href="javascript:;" class="right"></a>
+    </div>
+
+    <!----------第二屏------->
+    <div class="section fs_numtwo">
+        <article class="two_top">
+            <div class="top_tit">
+                <h1></h1>
+                <p>这儿没有一场说走就走的旅行，只有遍布全球的人生体验。</p>
+            </div>
+            <!--内容-->
+            <div class="two_bottom">
+                <div class="tb_left">
+                    <div class="tblTop">
+                        <div class="one">
+                            <h1></h1><br />
+                            “待”一阵儿
+                        </div>
+                        <div class="two">
+                            <p>
+                                这里不介绍别人口中著名的景点，<br />
+                                这里的旅行只适合那些“不追逐，做自己”的人。
+                            </p>
+                            <a href="#" target="_blank" class="m_more">MORE</a>
+                        </div>
+                    </div>
+                    <div class="tbl_bot">
+                        <ul>
+                            <li class="tbot-one">
+                                <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20151204/6/20151204154726884_281_180.jpg" /></a>
+                                <p><a href="#">体验绝美的太湖山水生活——太湖花床度假民宿</a></p>
+                                <div class="bomBg"></div>
+                                <a target="_blank" href="#"><div class="boxDiv"></div></a>
+                            </li>
+                            <li class="tbot-two">
+                                <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150908/0/20150908151358779_281_180.jpg" /></a>
+                                <p><a href="#">城市修行者之旅——青岛space，为觉醒而生</a></p>
+                                <div class="bomBg"></div>
+                                <a target="_blank" href="#"><div class="boxDiv"></div></a>
+                            </li>
+                            <li class="tbot-three">
+                                <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150917/6/20150917184641711_281_180.jpg" /></a>
+                                <p><a href="#">喜马拉雅边境探秘，触手可及的极地冰川之旅</a></p>
+                                <div class="bomBg"></div>
+                                <a target="_blank" href="#"><div class="boxDiv"></div></a>
+                            </li>
+                            <li class="tbot-four">
+                                <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150731/9/20150731163656854_281_180.jpg" /></a>
+                                <p><a href="#">山中不知年岁，城里才晓乡愁——杭州菩提谷</a></p>
+                                <div class="bomBg"></div>
+                                <a target="_blank" href="#"><div class="boxDiv"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--right-->
+                <div class="tbl_right">
+                    <div class="bigImg">
+                        <a target="_blank" href="#"><img src="http://img1.daizhe.cn/experience/20151215/9/20151215184937625.jpg" class="thisImg" /> </a>
+                        <!--<a target="_blank" href="#" class="boxDiv_link"></a>-->
+                        <div class="tr_top">
+                            <h2>围炉夜话 尽享莫干——唯乐山居暖冬体验</h2>
+                            <span class="people">37人申请</span>
+                            <a target="_blank" href="#" class="shen">立即申请</a>
+                        </div>
+                    </div>
+
+                    <div class="tr_bot">
+                        <ul>
+                            <li class="trb-one">
+                                <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150624/4/20150704133906400_281_180.jpg" /></a>
+                                <p><a  target="_blank" href="#">绝美景观的生态体验——离天最近的草原行宫</a></p>
+                                <div class="bomBg"></div>
+                                <a target="_blank" href="#"><div class="boxDiv"></div></a>
+                            </li>
+                            <li class="trb-two">
+                                <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150518/5/20150518185548566_281_180.jpg" /></a>
+                                <p><a  target="_blank" href="#">洱海仍有一片静谧，让你以梦为桨</a></p>
+                                <div class="bomBg"></div>
+                                <a target="_blank" href="#"><div class="boxDiv"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <!-------第三屏--------->
+    <div class="section fs_numthree">
+        <div class="slide the_one">
+            <div class="tit_top">
+                <div class="ttone">
+                    <h1></h1><br />
+                    “待”一会儿
+                </div>
+                <div class="ttbom">
+                    <p>
+                        在不同于往日的方寸“无用”之间，<br />
+                        体会到生活原来还大有另一种可能。
+                    </p>
+                    <a href="#" target="_blank" class="m_more">MORE</a>
+                </div>
+            </div>
+
+            <div class="sone-bom">
+                <ul>
+                    <li>
+                        <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150317/3/20150318190207250_362_232.jpg" class="b_img" /></a>
+                        <div class="b_text">
+                            <p><a target="_blank" href="#">体验待着小伙伴的一天——实地探访待着网</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150120/8/20150120132956568_362_232.jpg" class="b_img" /></a>
+                        <div class="b_text">
+                            <p><a target="_blank" href="#">待着·喝茶</a></p>
+                        </div>
+                    </li>
+                    <li class="clemr">
+                        <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20151207/7/20151207185808415_362_232.jpg" class="b_img" /></a>
+                        <div class="b_text">
+                            <p><a target="_blank"  href="#">优美的高于生活——艺术节纪念T恤&帆布袋</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20151216/0/20151216101506188_362_232.jpg" class="b_img" /></a>
+                        <div class="b_text">
+                            <p><a target="_blank"  href="#">待着·喝茶——平凡生活中的仪式感</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150508/5/20150508220643680_362_232.jpg" class="b_img" /></a>
+                        <div class="b_text">
+                            <p><a target="_blank"  href="#">待着“同学会”</a></p>
+                        </div>
+                    </li>
+                    <li class="clemr">
+                        <a target="_blank" href="#"><img src="http://cache1.daizhe.cn/experience/20150522/0/20150522185226313_362_232.jpg" class="b_img" /></a>
+                        <div class="b_text">
+                            <p><a target="_blank"  href="#">待着联手UBER广州，请你做一天哆啦A梦司机</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide the_two">
+            <article class="w1124">
+                <div class="index_title5">
+                    <h1></h1>
+                    <p>找回待着的初心，只需动动手指。</p>
+                </div>
+
+                <div class="yiyouBox clear">
+                    <!--社区-->
+                    <div class="fl yiyou_left">
+                        <div class="l_img"></div>
+                        <a href="#" target="_blank" class="ziColor"></a>
+                        <a href="#" target="_blank" class="ziText"></a>
+                    </div>
+                    <div class="fr yiyou_right">
+                        <!--状态-->
+                        <div class="zhuangtai">
+                            <div class="z_img"></div>
+                            <a href="#" target="_blank" class="ziColor"></a>
+                            <a href="#" target="_blank" class="ziText"></a>
+                        </div>
+                        <!--待法-->
+                        <div class="zhuangtai">
+                            <div class="z_img z_img2"></div>
+                            <a href="#" target="_blank" class="ziColor ziColor2"></a>
+                            <a href="#" target="_blank" class="ziText ziText2"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+
+    <!-------第四屏------->
+    <div class="section fs_numfour">
+        <article class="w1124">
+            <div class="in_bottom">
+                <div class="faqiBg">
+                    <a href="#" target="_blank" class="faqi">发起体验</a>
+                </div>
+            </div>
+        </article>
+
+        <div id="foot">
+            <ul>
+                <li>
+                    <h5>关于我们<br /><em>ABOUT US</em></h5>
+                    <p><a href="#" target="_blank">关于待着</a></p>
+                    <p><a href="#" target="_blank">加入我们</a></p>
+                    <p><a href="#" target="_blank">联系我们</a></p>
+                    <p><a href="#" target="_blank">媒体报道</a></p>
+                    <p><a href="#" target="_blank">商业合作</a></p>
+                    <p><a href="#" target="_blank">Cooperation</a></p>
+                </li>
+                <li>
+                    <h5>帮助中心<br /><em>HELP</em></h5>
+                    <p><a href="#" target="_blank">玩转待着</a></p>
+                    <p><a href="#" target="_blank">建议反馈</a></p>
+                    <p><a href="#" target="_blank">申请认证</a></p>
+                </li>
+                <li>
+                    <h5>关于体验<br /><em>EXPERIENCE</em></h5>
+                    <p><a href="#" target="_blank">为何免费</a></p>
+                    <p><a href="#" target="_blank">是否有黑幕</a></p>
+                    <p><a href="#" target="_blank">何为体验官</a></p>
+                    <p><a href="#" target="_blank">体验官如何产生</a></p>
+                    <p><a href="#" target="_blank">活动视频</a></p>
+                </li>
+                <li>
+                    <h5>网站条款<br /><em>SITE TERMS</em></h5>
+                    <p><a href="#" target="_blank">会员条款</a></p>
+                    <p><a href="#" target="_blank">版权声明</a></p>
+                </li>
+                <li class="last">
+                    <a href="http://weibo.com/678300513" target="_blank" class="sina">待着公众微博</a>
+                    <a href="javascript:;" class="weixin" style="cursor:default; text-decoration:none;">待着公众微信</a>
+                    <img src="image/daizhe_code_n.png" alt="" width="98" height="98"/>
+                </li>
+            </ul>
+            <p class="copyright">copyright 2014 daizhe.cn  All rights reserved    <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备10215719号-5</a></p>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+<script src="js/lib/jquery-1.9.1.js"></script>
+<script src="js/lib/jquery.fullPage.js"></script>
+<script src="js/lib/less.min.js"></script>
+<script src="js/lib/utils.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function(){
+        $('#fullpage').fullpage({
+            'verticalCentered': false,
+            'css3': true,
+            'sectionsColor': ['#254875', '#FF8D16', '#E8E8E8', '#000'],
+            'anchors': ['page1', 'page2', 'page3', 'page4'],
+            'navigation': 'true',
+            'loopBottom':'true',
+            'navigationPosition': 'right',
+            'navigationTooltips': ['home','experience','community','state'],
+            afterLoad:function (anchorLink,index) {
+                if(index==2){
+                    window.setTimeout(function () {
+                        $(".tblTop").addClass("animated fadeInDown").css({visibility:'visible'});
+                    },500);
+                    window.setTimeout(function () {
+                        $(".tbot-one").addClass("animated fadeInLeft").css({visibility:'visible'});
+                        $(".tbot-two").addClass("animated zoomInRight").css({visibility:"visible"});
+                        $(".tbot-three").addClass("animated fadeInUp").css({visibility:"visible"});
+                        $(".tbot-four").addClass("animated lightSpeedIn").css({visibility:"visible"});
+                    },800);
+
+                    $(".bigImg").addClass("animated flip").css({visibility:"visible"});
+                    window.setTimeout(function () {
+                        $(".trb-one").addClass("animated flipInY").css({visibility:"visible"});
+                        $(".trb-two").addClass("animated slideInRight").css({visibility:"visible"});
+                    },1100);
+                }
+
+                var olia=$("#header .top .list li a");
+                if (index==1){
+                    olia.eq(0).addClass('blue').parent().siblings().children('a').removeClass('blue');
+                }else if (index==2){
+                    olia.eq(1).addClass('blue').parent().siblings().children('a').removeClass('blue');
+                }else if (index==3){
+                    olia.eq(2).addClass('blue').parent().siblings().children('a').removeClass('blue');
+
+                    $(".fs_numthree .the_two .w1124 .yiyouBox .yiyou_left .l_img").addClass('run');
+                    $(".fs_numthree .the_two .w1124 .yiyouBox .yiyou_right .zhuangtai .z_img").addClass('go');
+                    $(".fs_numthree .the_two .w1124 .yiyouBox .yiyou_right .zhuangtai .ziColor2").addClass('go');
+
+                }else if (index==4){
+                    olia.eq(3).addClass('blue').parent().siblings().children('a').removeClass('blue');
+                }
+//                if (index!==3) {
+//                    $(".fs_numthree .slide").removeClass('active');
+//                }
+            },
+            onLeave:function (index,nextIndex,direction) {
+                $(".tblTop").removeClass("animated fadeInDown").css({visibility:"hidden"});
+                $(".tbot-one").removeClass("animated fadeInLeft").css({visibility:"hidden"});
+                $(".tbot-two").removeClass("animated zoomInRight").css({visibility:"hidden"});
+                $(".tbot-three").removeClass("animated fadeInUp").css({visibility:"hidden"});
+                $(".tbot-four").removeClass("animated lightSpeedIn").css({visibility:"hidden"});
+                $(".bigImg").removeClass("animated flip").css({visibility:"hidden"});
+                $(".trb-one").removeClass("animated flipInY").css({visibility:"hidden"});
+                $(".trb-two").removeClass("animated slideInRight").css({visibility:"hidden"});
+
+            }
+
+        })
+    })
+
+</script>
+</body>
+</html>
