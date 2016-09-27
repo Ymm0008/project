@@ -1,0 +1,176 @@
+#header,
+header {
+  position: fixed;
+  background-color: rgba(37,37,37,.98);
+  z-index: 10;
+}
+
+#header .tit,
+header .tit {
+  height: 2.9rem;
+  line-height: 2.9rem;
+  width: 100%;
+}
+
+#header .tit,
+#side,
+header .tit {
+  text-align: center;
+  font-size: .875rem;
+}
+
+#header,
+#side,
+header {
+  z-index: 10;
+}
+
+#flank .fl_list li a,
+#header .tit,
+header .tit {
+  display: block;
+  font-weight: 900;
+  color: #fff;
+}
+
+a,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+input,
+li,
+ol,
+p,
+section,
+span,
+table,
+ul {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  font-family: "微软雅黑";
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+input {
+  border: none;
+}
+
+button,
+input {
+  outline: 0;
+}
+
+body {
+  background-color: #ffebcd;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+}
+
+#flank,
+#middle {
+  position: fixed;
+  height: 100%;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transform: translate(-100%);
+}
+
+#side {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  line-height: 1.125rem;
+  position: fixed;
+  top: .875rem;
+  left: .625rem;
+  color: #fff;
+}
+
+#middle {
+  width: 100%;
+  background-color: #272727;
+  opacity: .7;
+  top: 0;
+  z-index: 3;
+  transition: all .5s linear;
+}
+
+#flank {
+  z-index: 5;
+  opacity: .9;
+  top: 2.6rem;
+  width: 50%;
+  background-color: #9015c1;
+  transition: all .5s linear;
+}
+
+#flank .fl_list {
+  overflow: hidden;
+}
+
+#flank .fl_list li a {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding-left: .625rem;
+  margin: .625rem 0;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+  transform: translate(0);
+}
+
+#flank .fl_list li .bg {
+  background-color: #eab009;
+  border-radius: 0 1rem 1rem 0;
+}
+
+#flank .fl_list li [class*=" icon-"]:before,
+#flank .fl_list li [class^=icon-]:before {
+  margin-right: .3125rem;
+}
+
+iframe {
+  width: 100%;
+  position: absolute;
+  height: 800%;
+}

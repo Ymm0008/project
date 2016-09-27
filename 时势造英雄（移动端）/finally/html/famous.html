@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>(时势造英雄)移动端---famous</title>
+
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/famous.min.css"/>
+    <script src="../js/lib/less.min.js"></script>
+    <script src="../js/lib/utils.js"></script>
+    <link rel="stylesheet" href="../css/swiper-3.3.1.min.css">
+    <script src="../js/lib/zepto.min.js"></script>
+    <script src="../js/lib/touch.js"></script>
+    <script src="../js/lib/swiper-3.3.1.jquery.min.js"></script>
+    <script src="../js/lib/swiper-3.3.1.min.js"></script>
+</head>
+<body>
+    <script>
+        +function () {
+            resRem();
+            function resRem() {
+                var html=document.getElementsByTagName("html")[0];
+                var winW=document.documentElement.clientWidth||document.body.clientWidth;
+                html.style.fontSize=(winW / 10 )+"px";// 一个屏幕平分成10份,1rem= 1/10;
+            }
+            window.onresize=function () {
+                resRem();
+            }
+        }();
+    </script>
+    <header>
+        名站
+    </header>
+
+    <div id="website">
+        <ul>
+            <li><a class="web_one" href="http://www.sohu.com/">搜狐</a></li>
+            <li><a class="web_two" href="https://www.sogou.com/">搜狗</a></li>
+            <li><a class="web_three" href="http://www.baidu.com/">百度</a></li>
+            <li><a class="web_four" href="http://www.sina.com.cn/">新浪</a></li>
+            <li><a class="web_five" href="http://www.qq.com/">腾讯</a></li>
+            <li><a class="web_six" href="http://www.163.com/">网易</a></li>
+            <li><a class="web_seven" href="http://bj.58.com/">58同城</a></li>
+            <li><a class="web_eight" href="https://www.taobao.com/">淘宝</a></li>
+            <li><a class="web_nine" href="http://www.zhenai.com/900122.html">珍爱网</a></li>
+        </ul>
+    </div>
+
+    <div id="extend">
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">社交</a></li>
+            <li class="exo_one"><a href="">微博</a></li>
+            <li class="exo_one"><a href="">贴吧</a></li>
+            <li class="exo_one"><a href="">天涯</a></li>
+            <li class="exo_one"><a href="">空间</a></li>
+        </ul>
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">彩票</a></li>
+            <li class="exo_one"><a href="">Q彩</a></li>
+            <li class="exo_one"><a href="">手彩</a></li>
+            <li class="exo_one"><a href="">500</a></li>
+            <li class="exo_one"><a href="">体彩</a></li>
+        </ul>
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">财经</a></li>
+            <li class="exo_one"><a href="">东方</a></li>
+            <li class="exo_one"><a href="">和讯</a></li>
+            <li class="exo_one"><a href="">证券</a></li>
+            <li class="exo_one"><a href="">新浪</a></li>
+        </ul>
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">音乐</a></li>
+            <li class="exo_one"><a href="">百度</a></li>
+            <li class="exo_one"><a href="">酷狗</a></li>
+            <li class="exo_one"><a href="">酷我</a></li>
+            <li class="exo_one"><a href="">咪咕</a></li>
+        </ul>
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">军事</a></li>
+            <li class="exo_one"><a href="">铁血</a></li>
+            <li class="exo_one"><a href="">中华</a></li>
+            <li class="exo_one"><a href="">环球</a></li>
+            <li class="exo_one"><a href="">西陆</a></li>
+        </ul>
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">女性</a></li>
+            <li class="exo_one"><a href="">瑞丽</a></li>
+            <li class="exo_one"><a href="">蘑菇街</a></li>
+            <li class="exo_one"><a href="">美丽说</a></li>
+            <li class="exo_one"><a href="">唯品</a></li>
+        </ul>
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">汽车</a></li>
+            <li class="exo_one"><a href="">爱卡</a></li>
+            <li class="exo_one"><a href="">易车</a></li>
+            <li class="exo_one"><a href="">驾校</a></li>
+            <li class="exo_one"><a href="">汽车之家</a></li>
+        </ul>
+        <ul class="ex_one">
+            <li class="exo_t"><a href="">图片</a></li>
+            <li class="exo_one"><a href="">美女</a></li>
+            <li class="exo_one"><a href="">悦图</a></li>
+            <li class="exo_one"><a href="">美团</a></li>
+            <li class="exo_one"><a href="">榜单</a></li>
+        </ul>
+    </div>
+
+<button id="back">
+    返回首页
+</button>
+    <script>
+        var back=document.querySelector("#back");
+
+        back.onclick=function () {
+            location.assign('../project.html');
+        }
+
+    </script>
+
+</body>
+</html>

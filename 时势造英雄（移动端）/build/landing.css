@@ -1,0 +1,173 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ul,
+li,
+button,
+ol,
+table,
+a,
+p,
+span,
+input,
+dl,
+dt,
+dd,
+header,
+section,
+footer {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  font-family: "微软雅黑";
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+input {
+  border: none;
+}
+input,
+button {
+  outline: none;
+}
+header {
+  width: 100%;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  background-color: orangered;
+  position: relative;
+}
+header .h_size {
+  font-size: 1.375rem;
+  color: white;
+}
+header a {
+  font-size: 1.375rem;
+  color: white;
+  position: absolute;
+  left: 0.625rem;
+  top: 0.25rem;
+}
+header span {
+  font-size: 1.375rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+form {
+  position: relative;
+  width: 100%;
+  height: 7.8125rem;
+  text-align: center;
+  margin-top: 0.625rem;
+}
+form .f_size {
+  width: 76%;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+}
+form input {
+  width: 76%;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  padding-left: 1.875rem;
+  border: 1px solid #c9c9c9;
+  font-size: 0.5rem;
+}
+form span {
+  font-size: 0.5rem;
+  color: #5c5c5c;
+  position: absolute;
+  left: 0.625rem;
+}
+form .per {
+  top: 0.625rem;
+}
+form .word {
+  top: 2.125rem;
+}
+form #test {
+  position: relative;
+  width: 90%;
+  height: 1.5625rem;
+  margin: 0.3125rem auto;
+}
+form #test .test_size {
+  display: inline-block;
+  width: 45%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  float: left;
+  margin-top: 0.15625rem;
+}
+form #test input {
+  display: inline-block;
+  width: 45%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  float: left;
+  margin-top: 0.15625rem;
+  padding: 0;
+}
+form #test .seccode {
+  display: inline-block;
+  width: 45%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  float: left;
+  margin-top: 0.15625rem;
+  border: 1px solid silver;
+  float: right;
+  position: static;
+  background: -webkit-linear-gradient(top left, pink, cornflowerblue, yellow, greenyellow, purple);
+  background: -moz-linear-gradient(top left, pink, cornflowerblue, yellow, greenyellow, purple);
+  background: -ms-linear-gradient(top left, pink, cornflowerblue, yellow, greenyellow, purple);
+  background: -o-linear-gradient(top left, pink, cornflowerblue, yellow, greenyellow, purple);
+  background: linear-gradient(top left, pink, cornflowerblue, yellow, greenyellow, purple);
+}
+form #test .fuzzy {
+  position: absolute;
+  bottom: 0.1875rem;
+  left: 6.25rem;
+  display: block;
+  font-size: 0.25rem;
+  color: #5d5d5d;
+}
+form button {
+  width: 76%;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  border: none;
+  width: 90%;
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 5%;
+  background-color: #eb4100;
+  color: white;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+form a {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  font-size: 0.4375rem;
+  color: #8c8c8c;
+}

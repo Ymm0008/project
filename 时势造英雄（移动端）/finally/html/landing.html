@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>(时势造英雄)移动端----landing</title>
+
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/landing.min.css"/>
+    <script src="../js/lib/less.min.js"></script>
+
+    <link rel="stylesheet" href="../css/swiper-3.3.1.min.css">
+    <script src="../js/lib/zepto.min.js"></script>
+    <script src="../js/lib/touch.js"></script>
+    <script src="../js/lib/swiper-3.3.1.jquery.min.js"></script>
+    <script src="../js/lib/swiper-3.3.1.min.js"></script>
+</head>
+<body>
+<script>
+    +function () {
+        resRem();
+        function resRem() {
+            var html=document.getElementsByTagName("html")[0];
+            var winW=document.documentElement.clientWidth||document.body.clientWidth;
+            html.style.fontSize=(winW / 10 )+"px";// 一个屏幕平分成10份,1rem= 1/10;
+        }
+        window.onresize=function () {
+            resRem();
+        }
+    }();
+</script>
+    <header>
+        <a href="../project.html" class="icon icon-angle-left"></a>
+        <span>会员登录</span>
+    </header>
+    <form action="">
+        <input class="acnum" type="text" placeholder="请输入账号"/>
+        <input class="code" type="password" placeholder="请输入密码" style="margin-top: -1px"/>
+        <span class="per">账号</span>
+        <span class="word">密码</span>
+        <div id="test">
+            <input class="authcode" type="text" placeholder="请输入验证码"/>
+            <span class="seccode"></span>
+            <span class="fuzzy">看不清,换一张</span>
+        </div>
+        <button type="button">登录</button>
+        <a href="#">免费注册</a>
+    </form>
+
+<script>
+    var secCode=document.querySelector(".seccode");
+    var fuzzy=document.querySelector(".fuzzy");
+    var str= "abcdefghijklmnopqrstuvwxyz"+"ABCDEFGHIJKLMNOPQRSTUVWXYZ"+"0123456789";
+
+    getCode();
+    function getCode() {
+        var num="";
+//        for (var i=0;i<4;i++){
+//            var s=Math.round(Math.random()*(61-0)+0);
+//            if (num.indexOf(str[s])===-1){
+//                if (num.length>=4){
+//                    return;
+//                }
+//                num+=str[s];
+//            }
+//        }
+        while(num.length<4){
+            var s=Math.round(Math.random()*(61-0)+0);
+            if (num.indexOf(str[s])===-1){
+                num+=str[s];
+            }
+        }
+        secCode.innerHTML=num;
+    }
+
+    fuzzy.onclick=getCode;
+
+
+
+
+</script>
+</body>
+</html>

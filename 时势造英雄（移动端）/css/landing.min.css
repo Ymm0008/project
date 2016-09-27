@@ -1,0 +1,191 @@
+header .h_size,
+header a {
+  font-size: 1.375rem;
+  color: #fff;
+}
+
+form .f_size,
+form input {
+  width: 76%;
+  line-height: 1.5625rem;
+  height: 1.5625rem;
+}
+
+form span,
+header a {
+  position: absolute;
+  left: .625rem;
+}
+
+form,
+form #test,
+header {
+  position: relative;
+}
+
+form,
+form button,
+header span {
+  text-align: center;
+}
+
+a,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+input,
+li,
+ol,
+p,
+section,
+span,
+table,
+ul {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  font-family: "微软雅黑";
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+input {
+  border: none;
+}
+
+button,
+input {
+  outline: 0;
+}
+
+header {
+  width: 100%;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  background-color: #ff4500;
+}
+
+header a {
+  top: .25rem;
+}
+
+header span {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  display: inline-block;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  height: 7.8125rem;
+  margin-top: .625rem;
+}
+
+form input {
+  padding-left: 1.875rem;
+  border: 0.013333rem solid #c9c9c9;
+  font-size: .5rem;
+}
+
+form span {
+  font-size: .5rem;
+  color: #5c5c5c;
+}
+
+form .per {
+  top: .625rem;
+}
+
+form .word {
+  top: 2.125rem;
+}
+
+form #test {
+  width: 90%;
+  height: 1.5625rem;
+  margin: .3125rem auto;
+}
+
+form #test .seccode,
+form #test .test_size,
+form #test input {
+  display: inline-block;
+  width: 45%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  margin-top: .15625rem;
+}
+
+form #test .test_size {
+  float: left;
+}
+
+form #test input {
+  float: left;
+  padding: 0;
+}
+
+form #test .seccode {
+  border: 0.013333rem solid silver;
+  float: right;
+  position: static;
+  background: -webkit-linear-gradient(top left,pink,#6495ed,#ff0,#adff2f,purple);
+  background: -moz-linear-gradient(top left,pink,#6495ed,#ff0,#adff2f,purple);
+  background: -ms-linear-gradient(top left,pink,#6495ed,#ff0,#adff2f,purple);
+  background: -o-linear-gradient(top left,pink,#6495ed,#ff0,#adff2f,purple);
+  background: linear-gradient(top left,pink,#6495ed,#ff0,#adff2f,purple);
+}
+
+form #test .fuzzy {
+  position: absolute;
+  bottom: .1875rem;
+  left: 6.25rem;
+  display: block;
+  font-size: .25rem;
+  color: #5d5d5d;
+}
+
+form button {
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  border: none;
+  width: 90%;
+  position: absolute;
+  bottom: .9375rem;
+  left: 5%;
+  background-color: #eb4100;
+  color: #fff;
+  font-size: .6875rem;
+}
+
+form a {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  font-size: .4375rem;
+  color: #8c8c8c;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>email</title>
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="../less/window.less"/>
+    <script src="../js/lib/less.min.js"></script>
+    <script src="../js/lib/zepto.min.js"></script>
+</head>
+<body>
+
+<div id="header">
+    <span class="tit">my  style</span>
+</div>
+
+<!----侧边栏---->
+<span id="side" class="icon icon-list"></span>
+
+<div id="flank">
+    <ul class="fl_list">
+        <li><a href="../project.html" class="fll_one bg icon icon-trophy">首页</a></li>
+        <li><a href="http://www.qstheory.cn/" class="fll_two icon icon-file-alt">新闻动态</a></li>
+        <li><a href="landing.html" class="fll_three icon icon-user">个人中心</a></li>
+        <li><a href="#" class="fll_four icon icon-cog">设置</a></li>
+        <li><a href="#" class="fll_five icon icon-bullhorn">关于我们</a></li>
+    </ul>
+</div>
+<div id="middle"></div>
+
+
+
+<iframe id="myiframe"  style="margin-top: -0.3rem;"
+        src="http://m.thepaper.cn/" frameborder="0" scrolling="no"></iframe>
+
+<script>
+    ~function () {
+        $('#side').on('click',function (e) {
+            $('#middle').css({
+                '-webkit-transform': 'translateX(0%)',
+                '-moz-transform': 'translateX(0%)',
+                '-ms-transform': 'translateX(0%)',
+                '-o-transform': 'translateX(0%)',
+                'transform': 'translateX(0%)'
+            });
+            $('#flank').css({
+                '-webkit-transform': 'translateX(0%)',
+                '-moz-transform': 'translateX(0%)',
+                '-ms-transform': 'translateX(0%)',
+                '-o-transform': 'translateX(0%)',
+                'transform': 'translateX(0%)'
+            });
+            $("#flank .fl_list li a").css({
+                '-webkit-transform': 'translate(0%)',
+                '-moz-transform': 'translate(0%)',
+                '-ms-transform': 'translate(0%)',
+                '-o-transform': 'translate(0%)',
+                'transform': 'translate(0%)'
+            });
+
+            $(".fll_one").addClass('bg');
+            $(".fll_two").css({
+                'transition-delay': '0.35s'
+            });
+            $(".fll_three").css({
+                'transition-delay': '.5s'
+            });
+            $(".fll_four").css({
+                'transition-delay': '.65s'
+            });
+            $(".fll_five").css({
+                'transition-delay': '.8s'
+            });
+        });
+        $('#middle').on('click',function () {
+            $(this).css({
+                '-webkit-transform': 'translateX(-100%)',
+                '-moz-transform': 'translateX(-100%)',
+                '-ms-transform': 'translateX(-100%)',
+                '-o-transform': 'translateX(-100%)',
+                'transform': 'translateX(-100%)'
+            });
+            $('#flank').css({
+                '-webkit-transform': 'translateX(-100%)',
+                '-moz-transform': 'translateX(-100%)',
+                '-ms-transform': 'translateX(-100%)',
+                '-o-transform': 'translateX(-100%)',
+                'transform': 'translateX(-100%)'
+            });
+            $("#flank .fl_list li a").css({
+                '-webkit-transform': 'translateX(-100%)',
+                '-moz-transform': 'translateX(-100%)',
+                '-ms-transform': 'translateX(-100%)',
+                '-o-transform': 'translateX(-100%)',
+                'transform': 'translateX(-100%)'
+            });
+
+
+            $(".fll_one").parent().siblings().children('a').removeClass('bg');
+
+        });
+    }();
+
+
+</script>
+</body>
+</html>

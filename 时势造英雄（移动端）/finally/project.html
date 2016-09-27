@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>(时势造英雄)移动端</title>
+
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.min.css"/>
+    <script src="js/lib/less.min.js"></script>
+    <script src="js/lib/utils.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/lib/touch.js"></script>
+    <script src="js/lib/swiper-3.3.1.jquery.min.js"></script>
+    <script src="js/lib/swiper-3.3.1.min.js"></script>
+</head>
+<body>
+
+<script>
+    +function () {
+        resRem();
+        function resRem() {
+            var html=document.getElementsByTagName("html")[0];
+            var winW=document.documentElement.clientWidth||document.body.clientWidth;
+            html.style.fontSize=(winW / 10 )+"px";// 一个屏幕平分成10份,1rem= 1/10;
+        }
+        window.onresize=function () {
+            resRem();
+        }
+    }();
+</script>
+    <header>
+        <img src="img/logo.jpg" alt="">
+        <div class="search">
+            <input class="know" type="text" placeholder="秀才不出门,便知天下事"/>
+            <button class="found">搜索</button>
+        </div>
+        <div id="small">
+            <a href="" class="cute"></a>
+            <dl class="sm_peo">
+                <dt><img src="img/person_03.png" alt=""></dt>
+                <dd>登录</dd>
+            </dl>
+            <dl class="sm_email">
+                <dt><img src="img/email_03.png" alt=""></dt>
+                <dd>邮箱</dd>
+            </dl>
+            <dl class="sm_game">
+                <dt><img src="img/game.png" alt=""></dt>
+                <dd>游戏</dd>
+            </dl>
+            <dl class="sm_famous">
+                <dt><img src="img/famous_03.png" alt=""></dt>
+                <dd>名站</dd>
+            </dl>
+        </div>
+    </header>
+
+<!-------导航区域------>
+    <nav id="navbar">
+        <ul class="nav_list">
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">财经</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">军事</a></li>
+            <li><a href="#">图库</a></li>
+            <li><a href="#">汽车</a></li>
+            <li><a href="#">历史</a></li>
+            <li><a href="#">健康</a></li>
+            <li><a href="#">文化</a></li>
+            <li><a href="#">小说</a></li>
+            <li class="nlbar"><a class="nl_last" href="#">更多</a></li>
+        </ul>
+    </nav>
+
+    <!-----轮播------>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="http://s9.rr.itc.cn/t/wapChange/20169_2_7/a5l4y7381471852113.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="http://s8.rr.itc.cn/t/wapChange/20169_2_15/a329j2286026978050.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="http://s9.rr.itc.cn/t/wapChange/20169_2_17/a4r3mu911780460113.jpg" alt=""></a></div>
+        </div>
+        <div class="swiper-button-prev swiper-button-white" style="height: 24px;"></div>
+        <div class="swiper-button-next swiper-button-white" style="height: 24px;"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--广告-->
+    <div id="advert">
+        <a href="#">刺客列传:慕容离真实身份被疑</a>
+        <a href="#">评价女王:金英光牵手权俞利</a>
+    </div>
+
+    <!--头条-->
+    <div id="news">
+        <p  class="dynamic" style="color: darkblue;">
+            绝对头条
+        </p>
+        <button>More</button>
+    </div>
+    <ul class="itemize">
+        <li><a href="#">习近平在G20领导人杭州峰会上的开幕辞（全文）</a></li>
+        <li><a href="#">今晚杭州真的变成了天堂 最美的图都在这！</a></li>
+        <li><a href="#">老对手新较量 宝马740Le对比奔驰S500eL</a></li>
+        <li><a href="#">朝鲜3媒导弹落入日本经济区 型号曝光</a></li>
+    </ul>
+
+    <!--四大类-->
+    <dl class="type_one type_news">
+        <dt><span class="icon icon-twitter"></span></dt>
+        <dd>国家新闻</dd>
+    </dl>
+    <dl class="type_one type_money">
+        <dt><span class="icon icon-eye-open"></span></dt>
+        <dd>财经新闻</dd>
+    </dl>
+    <dl class="type_one type_tec">
+        <dt><span class="icon icon-fighter-jet"></span></dt>
+        <dd>科技信息</dd>
+    </dl>
+    <dl class="type_one">
+        <dt><span class="icon icon-github-alt"></span></dt>
+        <dd>我的收藏</dd>
+    </dl>
+
+    <!--底部-->
+    <div id="foot">
+        <marquee class="goout" behavior="scroll" direction="left">天猫正品推荐,限时特惠,66折包邮,赶紧疯抢吧</marquee>
+    </div>
+    <div id="explain">
+        <span>@2016 知识就是力量-行业门户 版权所有</span>
+        <span>本站自主设计,多有雷同,请多包涵</span>
+    </div>
+
+    <div id="also">
+        <dl class="al_peo type_two">
+            <dt><span class="icon icon-user-md"></span></dt>
+            <dd>账户</dd>
+        </dl>
+        <dl class="al_weixin type_two">
+            <dt><span class="icon icon-comments"></span></dt>
+            <dd>微信</dd>
+        </dl>
+        <dl class="type_two">
+            <dt><span class="icon icon-edit"></span></dt>
+            <dd>留言</dd>
+        </dl>
+        <dl class="type_two type_map">
+            <dt><span class="icon icon-map-marker"></span></dt>
+            <dd>在线地图</dd>
+        </dl>
+    </div>
+
+<!--回到顶部-->
+
+<a id="backTop" class="icon icon-angle-up"><b>TOP</b></a>
+<!--侧边框-->
+<span id="side" class="icon icon-list"></span>
+
+<div id="flank">
+    <ul class="fl_list">
+        <li><a href="project.html" class="fll_one bg icon icon-trophy">首页</a></li>
+        <li><a href="html/move.html" class="fll_two icon icon-file-alt">新闻动态</a></li>
+        <li><a href="html/landing.html" class="fll_three icon icon-user">个人中心</a></li>
+        <li><a href="#" class="fll_four icon icon-cog">设置</a></li>
+        <li><a href="#" class="fll_five icon icon-bullhorn">关于我们</a></li>
+    </ul>
+</div>
+<div id="middle"></div>
+
+
+
+<script src="js/lib/jquery-1.9.1.js"></script>
+<script src="js/lib/utils.js"></script>
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/main-0.0.1-2016-09-18.min.js"></script>
+<script>
+    $("#also .al_weixin").on("click",function () {
+        location.assign('html/weixin.html');
+    });
+
+    var flank=document.getElementById("flank");
+    var list=flank.getElementsByClassName("fl_list")[0];
+    var oAs=list.getElementsByTagName("a");
+
+    for (var i=0;i<oAs.length;i++){
+        oAs[i].light=i;
+        oAs[i].onclick=function () {
+//            $(oAs[this.light]).parent().siblings().children('a').css({"backgroundColor":""});
+//            $(oAs[this.light]).css({"backgroundColor":"rgba(234, 176, 9, 1)",
+//                "border-radius":"0 1rem 1rem 0"});
+
+            $(oAs[this.light]).parent().siblings().children('a').removeClass('bg');
+            $(oAs[this.light]).addClass('bg');
+
+
+        }
+    }
+
+
+    var pro=document.getElementsByClassName("dynamic")[0];
+//    pro.onclick=function (e) {
+//        $.ajax({
+//            url:"iphone.myzaker.com/zaker/blog.php?_appid=AndroidPhone&_bsize=720_1280&_version=6.7&app_id=660",
+//            type:"get",
+//            success:function (data) {
+//                console.log(data)
+//            }
+//        })
+//    };
+    function change() {
+        var timer=null;
+        window.clearInterval(timer);
+        if(pro.style.color=="darkblue"){
+            pro.style.color="orange";
+        }else if (pro.style.color=="orange"){
+            pro.style.color="yellow";
+        }else if (pro.style.color=="yellow") {
+            pro.style.color="green";
+        }else if (pro.style.color=="green") {
+            pro.style.color="blue";
+        }else if (pro.style.color=="blue") {
+            pro.style.color="indigo";
+        }else if (pro.style.color=="indigo") {
+            pro.style.color="gold";
+        }else if(pro.style.color=="gold"){
+            pro.style.color="darkblue";
+        }
+    }
+    timer=window.setInterval(change,200);
+
+
+
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,
+        loop : true,
+        //autoHeight: true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        pagination : '.swiper-pagination',
+        paginationType : 'fraction',
+    })
+</script>
+</body>
+</html>
