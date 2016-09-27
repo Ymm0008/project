@@ -1,0 +1,237 @@
+html,body,div,img,span,p,h1,h2,h3,h4,h5,h6,a,input,form,button,ul,li,ol,dl{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+}
+img {
+    border: none;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input{
+    border: none;
+}
+/*---头部区域----*/
+#header {
+    width:1016px ;
+    height: 166px;
+    margin: 0 auto;
+    position: relative;
+}
+#header .h_logo {
+    display: inline-block;
+    width:436px ;
+    height: 154px;
+    background: url("../img/logo1.jpg") no-repeat;
+}
+/*--头部右上角*/
+#header .h_rt {
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    margin-right: 0;
+}
+#header .h_rt li {
+    float: left;
+    margin-right: 5px;
+}
+#header .h_rt li a {
+    font-size: 14px;
+    color: black;
+}
+#header .h_rt .hrt_last {
+    position: relative;
+    top:-30px;
+    margin: 0;
+    width: 239px;
+    height: 65px;
+    background: url("../img/bg02.png") no-repeat;
+}
+#header .h_rt .hrt_last p {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+/*--头部右下角*/
+#header .h_rb {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+#header .h_rb li {
+    float: left;
+    margin-right: 20px;
+}
+#header .h_rb li a {
+    font-size: 20px;
+    color: black;
+}
+#header .h_rb li a:hover{
+    text-decoration: underline;
+}
+
+/*隐藏部分*/
+#header .h_rb .hd_list {
+    display: none;
+    position: absolute;
+    bottom: -50px;
+    left: -90px;
+    width: 300px;
+    height: 60px;
+}
+#header .h_rb .hd_list li {
+    float: left;
+}
+#header .h_rb .hd_list li a {
+    font-size: 10px;
+    color: #c3c3c4;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+/*---表单登录---*/
+#member {
+    width: 1016px;
+    margin: 20px auto 0;
+    position: relative;
+}
+#member .list .people {
+    background: url("../img/tag_hydl_3.jpg") no-repeat;
+    height: 36px;
+    width: 94px;
+}
+#member .list .line {
+    margin-left: 86px;
+    width: 930px;
+    border-bottom: 1px solid silver;
+    box-shadow:1px 0px 5px 0.5px #a1a1a2 ;
+}
+/*--登录表单---*/
+#member .me_comment {
+    width: 280px ;
+    padding-left: 20px;
+    border-right: 1px solid #c3c3c4;
+}
+#member .me_comment p {
+    font-size: 12px;
+    margin: 30px 0;
+}
+#member .me_comment span {
+    font-size: 14px;
+    display: block;
+}
+#member .me_comment input {
+    border: 1px solid silver;
+    padding: 1px;
+    height:22px ;
+    width:200px ;
+    margin: 15px 0;
+}
+#member .me_comment #denglu {
+    width: 70px;
+    height: 22px;
+    background-color: #8b1625;
+    color: white;
+    border-radius:5px ;
+}
+#member .me_comment a {
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+}
+#member .me_comment div {
+    padding-top: 117px;
+}
+/*---注册表单----*/
+#member .register {
+    position: absolute;
+    top:30px;
+    left: 316px;
+    width:200px ;
+    padding: 0 47px;
+}
+#member .register p {
+    font-size: 12px;
+    margin: 40px 0;
+}
+#member .register span {
+    font-size: 14px;
+}
+#member .register input {
+    border: 1px solid silver;
+    padding: 1px;
+    height:22px ;
+    width:200px ;
+    margin: 25px 0;
+}
+#member .register #zhuce {
+    width: 70px;
+    height: 22px;
+    margin: 25px auto 0;
+    background-color: #8b1625;
+    color: white;
+    border-radius:5px ;
+}
+/*--小注--*/
+#place {
+    position: relative;
+    top: 240px;
+    left: 20px;
+    width: 1010px;
+    margin: 0 auto;
+}
+#place span,#place a {
+    font-size: 12px;
+    color: black;
+    display: inline-block;
+    margin-right: 5px;
+}
+/*---底部--*/
+#footer {
+    margin: 0 auto;
+    width:1010px ;
+    height: 18px ;
+    line-height: 18px;
+    margin-top: 300px;
+    background-color: black;
+    position: relative;
+}
+
+#footer .explain {
+    color: #f9f9f9;
+    font-size: 12px;
+}
+#footer .small {
+    position: absolute;
+    top:0;
+    right: 10px;
+}
+
+#footer .small li {
+    float: left;
+    color: white;
+}
+#footer .small li a {
+    color: white;
+    font-size: 12px;
+}
+#footer .small li a:hover {
+    color: silver;
+}
+
+#plate {
+    width: 1010px;
+    text-align: center;
+    margin: 10px auto 0;
+
+}
+
+
+
+

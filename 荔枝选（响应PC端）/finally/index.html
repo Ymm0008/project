@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script src="js/lib/tweenEvent.js"></script>
+    <script src="js/lib/public.js"></script>
+    <script src="js/lib/jquery-1.11.3.min.js"></script>
+
+</head>
+<body>
+
+<!--侧边菜单-->
+
+<ul id="he_side">
+    <p class="flower"></p>
+    <li><a href="#">专享礼遇</a></li>
+    <li><a href="#">注册</a></li>
+    <li><a href="project/landing.html">登录</a></li>
+    <li><a href="#">全部目的地</a></li>
+    <li><a href="#">酒店搜素</a></li>
+    <li><a href="project/place.html">荔枝游</a></li>
+    <li><a href="#" style="margin-bottom: 70px">首页</a></li>
+    <li><a href="#">为什么荔枝选</a></li>
+    <li><a href="#">联系我们</a></li>
+    <li class="last">
+        <select name="" id="language">
+            <option>中文</option>
+            <option value="">英文</option>
+        </select>
+    </li>
+</ul>
+
+
+
+
+<!-------头部区域------>
+    <div id="header">
+        <div class="logo">
+            <span class="hl_img"></span>
+            <span class="hl_word">升级你的旅行</span>
+            <div id="xian" style="cursor: pointer;width:22px;height: 30px;position: absolute;top: 20%;left:5% ;">
+                <span class="hl_line"></span>
+                <span class="hl_line" style="top: 25%"></span>
+                <span class="hl_line" style="top: 30%"></span>
+            </div>
+
+        </div>
+        <div class="service">
+            <ul class="hs_help">
+                <li><a class="zh" href="javascript:;">中文</a></li>
+                <li>|</li>
+                <li><a href="javascript:;" style="margin-right: 20px">English</a></li>
+                <li><a href="project/landing.html">登录</a></li>
+                <li>|</li>
+                <li><a href="project/landing.html">注册</a></li>
+                <li class="shelp_last">
+                    <p class="last_num">400-606-1666</p>
+                    <p class="last_phone">电邮我们</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="about">
+            <li><a href="###">酒店</a></li>
+            <li style="font-size: 22px">/</li>
+            <li><a href="project/place.html">荔枝游</a></li>
+        </ul>
+    </div>
+<!-----轮播区域------->
+    <div id="banner">
+        <div class="imglist">
+            <a class="show" href="#"><img src="http://image.lychee.com/lycheeimages/hotel/index/hotel/2015072214484827.jpg" alt=""></a>
+            <a href="#"><img src="http://image.lychee.com/lycheeimages/hotel/index/hotel/2015072212513532.jpg" alt=""></a>
+            <a href="#"><img src="http://image.lychee.com/lycheeimages/hotel/index/hotel/2015072214525648.jpg" alt=""></a>
+            <a href="#"><img src="http://image.lychee.com/lycheeimages/hotel/index/hotel/2015072214530792.jpg" alt=""></a>
+        </div>
+        <ul class="numlist">
+            <li class="appear"><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <div class="reserve">
+            <form class="query" action="">
+                <p>酒店预订</p>
+                <input class="place" type="text" placeholder="请输入目的地">
+                <div class="time">
+                    <input class="str" type="text" placeholder="入住时间" style="margin-right: 10px">
+                    <input class="end" type="text" placeholder="离开时间">
+                    <!--<div class="com one"></div>-->
+                    <!--<div class="com two"></div>-->
+                </div>
+                <div class="adult" style="margin-left: 25px">
+                    <div class="ad_cover"></div>
+                    <div class="ch_cover"></div>
+                    <select id="adult" style="margin-right: 10px">
+                        <option value="">1 成人</option>
+                        <option value="">2 成人</option>
+                        <option value="">3 成人</option>
+                        <option value="">4 成人</option>
+                    </select>
+                    <select id="child">
+                        <option value="">0 儿童</option>
+                        <option value="">1 儿童</option>
+                        <option value="">2 儿童</option>
+                        <option value="">3 儿童</option>
+                    </select>
+                </div>
+                <button class="empty">
+                    空房查询
+                </button>
+            </form>
+        </div>
+    </div>
+
+<!------小插曲------->
+    <div id="film">
+        <div class="fm_travel" style="text-align: center;margin-bottom: 20px">
+            <h3>荔枝选  升级你的旅行</h3>
+        </div>
+        <p class="fm_word">预订专家精选最好的酒店和旅行体验，获得最低价格以及免费房型升级等多种礼遇</p>
+    </div>
+<!----主部分----->
+    <div id="box">
+        <p class="bx_one">热门目的地</p>
+        <p class="bx_two">世界那么大,跟我们去看看</p>
+        <a class="dote" href="#"></a>
+        <div class="Italy" style="margin-bottom: 70px">
+            <img src="img/1.jpg" alt="" style="margin: 0 auto">
+            <span style="top: 50%">意大利酒店</span>
+        </div>
+        <div class="landon">
+            <img src="img/2.jpg" alt="">
+            <span style="top: 45%;width: 48.5%;">伦敦酒店</span>
+        </div>
+        <div class="Phuket" style="width:50%;right: -51.3%;top: -407px;">
+            <img src="img/3.jpg" alt="">
+            <span class="jiu" style="top: 45%;width: 100%">普吉最新酒店</span>
+            <span class="simple" style="font-size: 14px;opacity: 0.5">基马拉度假村</span>
+        </div>
+        <div class="newYork" style="position: relative;top:-320px ;">
+            <img src="img/4.jpg" alt="">
+            <span class="niu" style="top: 50%;width: 100%">纽约酒店</span>
+        </div>
+        <button class="more">
+            查看全部目的地
+        </button>
+
+        <div id="travel">
+            <p class="all">全部目的地</p>
+            <div class="Asia tit">
+                <h3 class="main">亚洲</h3>
+                <span class="con_first">中国及港澳台</span>
+                <div class="china country">
+                    <a href="#">香港</a>
+                    <a href="#">澳门</a>
+                    <a href="#">北京</a>
+                    <a href="#">台湾</a>
+                    <a href="#">杭州</a>
+                    <a href="#">上海</a>
+                    <a href="#">东莞</a>
+                    <a href="#">深圳</a>
+                    <a href="#">成都</a>
+                    <a href="#">三亚</a>
+                </div>
+            </div>
+            <div class="India tit">
+                <span class="con_first">印度</span>
+                <div class="china country">
+                    <a href="#">孟买</a>
+                    <a href="#">新德里</a>
+                    <a href="#">班加罗尔</a>
+                    <a href="#">加尔各答</a>
+                    <a href="#">西姆拉</a>
+                    <a href="#">乌代浦</a>
+                    <a href="#">斋普尔</a>
+                    <a href="#">金奈</a>
+                </div>
+            </div>
+
+            <div class="Japan tit">
+                <span class="con_first">日本</span>
+                <div class="china country">
+                    <a href="#">东京</a>
+                    <a href="#">京都</a>
+                    <a href="#">冲绳</a>
+                </div>
+            </div>
+            <div class="Mala tit">
+                <span class="con_first">马来西亚</span>
+                <div class="china country">
+                    <a href="#">吉隆坡</a>
+                    <a href="#">沙巴</a>
+                    <a href="#">巴厘岛</a>
+                </div>
+            </div>
+            <div class="Europe tit">
+                <h3 class="main">欧洲</h3>
+                <span class="con_first">法国</span>
+                <div class="china country">
+                    <a href="#">巴黎</a>
+                    <a href="#">罗彻克本</a>
+                    <a href="#">米朗博</a>
+                    <a href="#">普罗旺斯</a>
+                    <a href="#">米希拉克</a>
+                    <a href="#">圣马丁岛</a>
+                    <a href="#">阿尔勒</a>
+                    <a href="#">比亚历次</a>
+                    <a href="#">莫热窝</a>
+                    <a href="#">巴尼奥乐</a>
+                </div>
+            </div>
+            <div class="Amera tit">
+                <h3 class="main">美洲</h3>
+                <span class="con_first">巴西</span>
+                <div class="china country">
+                    <a href="#">里约热内卢</a>
+                    <a href="#">伊瓜苏</a>
+                </div>
+            </div>
+
+            <button class="close">
+            关闭查看
+            </button>
+        </div>
+
+    </div>
+
+
+<!--<注册的部分>-->
+<div id="login">
+    <p>
+        <span>荔枝会</span>
+        <a href="#"></a>
+    </p>
+    <img src="img/Zcn.jpg" alt="">
+    <form action="">
+        <input class="email" type="text" placeholder="请输入Email" style="border-right: 1px solid #adadad;">
+        <input class="point" type="password" placeholder="···">
+        <input class="landing" type="button" value="免费注册" style="height: 48px;background-color: #8b1625;color: white">
+    </form>
+    <button class="know">
+        点击了解更多
+    </button>
+</div>
+<!------中间部分----->
+<div id="middle">
+    <div class="top">
+        <p class="mt_one">荔枝游</p>
+        <p class="mt_two">发现独一无二的旅行体验，由我们的国际旅行专家为您精心呈现。</p>
+        <a class="dote" href="#"></a>
+    </div>
+    <div class="picture">
+        <a class="jpg_left" href="#">
+            <span>澳大利亚潜水乌托邦</span>
+        </a>
+        <a href="#" class="jpg_rt">
+            <span>帆船航海初体验</span>
+        </a>
+        <a href="#" class="jpg_rb">
+            <span>南非Safari</span>
+        </a>
+    </div>
+    <div class="room">
+        <a href="#" class="mr_jap">
+            <span>日本全面健康之旅</span>
+        </a>
+        <a href="#" class="mr_bai">
+            <span>柏林顶级地产之旅</span>
+        </a>
+    </div>
+    <button class="look">
+        查看全部主题旅游
+    </button>
+</div>
+
+<div class="same doubble" style="position: relative;top: -130px;">
+    <div class="sa_top">
+        <p>荔枝会白金会员专属礼遇</p>
+        <a href="#" class=""></a>
+    </div>
+    <img src="img/Vcn%20(1).jpg" alt="" style="display: block;margin: 30px auto;width: 1010px;height: 310px"/>
+    <button class="more">
+        点击了解更多
+    </button>
+</div>
+<div class="same three" style="background-color: white">
+    <div class="sa_top">
+        <p>合作伙伴</p>
+        <a href="#" class=""></a>
+    </div>
+    <ul>
+        <li class="tre_one tre_ze">
+            <img src="img/img08%20(1).jpg" alt="">
+            <p><b>订酒店，积国航里程</b><br/><span>在荔枝选预订酒店，输入您的国航凤凰知音卡号，即可累积凤凰知音里程。房费每消费10元可获得5公里知音里程。凤凰知音白金卡、金卡会员还可免费获得荔枝选VIP会籍。
+            </span></p>
+        </li>
+        <li class="tre_one tre_two">
+            <img src="img/img09%20(1).jpg" alt="">
+            <p><b>万事达卡专属礼遇</b><br/><span>荔枝选携手万事达打造万事达卡持卡人专享酒店礼遇。用万事达卡预订全球数百家全球精品酒店，获得免费房型升级、免费双人早餐等7重礼遇。
+            </span></p>
+        </li>
+        <li class="tre_one">
+            <img src="img/img13%20(1).jpg" alt="">
+            <p><b>订酒店，积南航里程</b><br/><span>预订酒店输入您的南航明珠卡号即可累积南航里程。房费每消费10元可获得5公里里程。会员在荔枝选消费积分达到或直接购买白金会籍可获赠3000里程。</span></p>
+        </li>
+    </ul>
+</div>
+<div class="four four_four">
+    <div class="four_top">
+        <p class="good">最佳酒店</p>
+        <p class="better">最好中的最好</p>
+        <a href="#"></a>
+    </div>
+    <a class="fo_one" href="#">
+        <img src="img/z1.jpg" alt="">
+        <span>最佳海滩酒店</span>
+    </a>
+    <a href="#" class="fo_two">
+        <img src="img/z2.jpg" alt="">
+        <span>最佳婚礼酒店</span>
+    </a>
+    <a href="#" class="fo_two fo_two_one" style="margin-left: 23px">
+        <img src="img/z3.jpg" alt="">
+        <span>最佳设计酒店</span>
+    </a>
+    <button>
+        查看全部酒店
+    </button>
+</div>
+<div class="four five">
+    <div class="four_top">
+        <p class="good">为什么荔枝选?</p>
+        <a href="#"></a>
+    </div>
+    <ul>
+        <li style="margin-left: 40px">最有格调选择</li>
+        <li>最贴心的服务</li>
+        <li>安全快捷预订</li>
+        <li>获里程免费住</li>
+    </ul>
+</div>
+
+<div class="four five six" style="background-color: #e9eaec;width: 100%;">
+    <div class="four_top">
+        <p class="good">合作伙伴</p>
+    </div>
+    <ul style="width: 1010px;height: 120px;margin: 0 auto">
+        <li><img src="img/lg01.jpg" alt=""></li>
+        <li><img src="img/lg02.jpg" alt=""></li>
+        <li><img src="img/lg03.jpg" alt=""></li>
+        <li><img src="img/lg04.jpg" alt=""></li>
+    </ul>
+</div>
+<div class="four five seven" style="background-color: #e9eaec;width: 100%;margin-top: 0">
+    <div class="four_top">
+        <p class="good">媒体报道</p>
+    </div>
+    <div class="art" style="width: 1010px;height: 120px;margin: 0 auto">
+        <img class="seven_05" src="img/lg05.jpg" alt="">
+        <img class="seven_05" src="img/lg06.jpg" alt="">
+        <img class="seven_07" src="img/lg07.jpg" alt="">
+        <img class="seven_05" src="img/lg08.jpg" alt="">
+        <img class="seven_09" src="img/lg09.jpg" alt="">
+        <p>
+           关注荔枝选微信<br/>赢取酒店免费住<br/>请用微信扫描
+        </p>
+        <img class="seven_ew" src="img/ewm.jpg" alt="" style="float:right;margin-right: 30px">
+    </div>
+</div>
+
+
+<footer>
+    <p class="over">荔枝选商务有限公司版权所有 ©Copyright By Lychee.com 2015 京ICP备11007245号－1</p>
+</footer>
+
+</body>
+<script src="js/main-0.0.1-2016-09-18.min.js"></script>
+
+</html>

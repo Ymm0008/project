@@ -1,0 +1,223 @@
+html,body,div,img,span,p,h1,h2,h3,h4,h5,h6,a,input,form,button,ul,li,ol,dl{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+}
+img {
+    border: none;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+/*---头部区域----*/
+#header {
+    width:1016px ;
+    height: 166px;
+    margin: 0 auto;
+    position: relative;
+}
+#header .h_logo {
+    display: inline-block;
+    width:436px ;
+    height: 154px;
+    background: url("../img/logo1.jpg") no-repeat;
+}
+/*--头部右上角*/
+#header .h_rt {
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    margin-right: 0;
+}
+#header .h_rt li {
+    float: left;
+    margin-right: 5px;
+}
+#header .h_rt li a {
+    font-size: 14px;
+    color: black;
+}
+#header .h_rt .hrt_last {
+    position: relative;
+    top:-30px;
+    margin: 0;
+    width: 239px;
+    height: 65px;
+    background: url("../img/bg02.png") no-repeat;
+}
+#header .h_rt .hrt_last p {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+/*--头部右下角*/
+#header .h_rb {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+#header .h_rb li {
+    float: left;
+    margin-right: 20px;
+}
+#header .h_rb li a {
+    font-size: 20px;
+    color: black;
+}
+#header .h_rb li a:hover{
+    text-decoration: underline;
+}
+
+
+/*--中部图片部分--*/
+#play {
+    width: 1010px;
+    margin: 10px auto 0;
+}
+#play .top .pt_lit {
+    float:left;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+#play .top .omn {
+    display: inline-block;
+    width: 930px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 14px;
+    padding-top: 10px;
+    border-bottom: 1px solid #9d2026;
+}
+#play .top .omn span {
+    font-size: 14px;
+    color: #6c121b;
+}
+/*--实景图片旅游区--*/
+#play .smart {
+    margin-top: 10px;
+}
+#play .smart div {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 245px;
+    height: 159px;
+    margin-bottom: 10px;
+}
+#play .smart div span{
+    /*visibile: hidden;*/
+    display: block;
+    width: 245px;
+    height: 50px;
+    font-size: 12px;
+    background-color: #5b5b5b;
+    position: absolute;
+    bottom: -50px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+    opacity:0.6;
+    filter: alpha(opacity=60);
+    transition: all 0.4s linear;
+}
+#play .smart div a {
+    display: block;
+}
+#play .smart img{
+    width: 245px;
+    height: 159px;
+    margin-right: 3px;
+    transition: all 0.6s linear;
+}
+/*.changeBig {*/
+    /*-webkit-animation:big 0.5s linear both ;*/
+    /*-o-animation:big 0.5s linear both;*/
+    /*animation:big 0.5s linear both;*/
+/*}*/
+/*@keyframes big{*/
+    /*100% {*/
+        /*-webkit-transform: scale(1.2,1.2);*/
+        /*-moz-transform: scale(1.2,1.2);*/
+        /*-ms-transform: scale(1.2,1.2);*/
+        /*-o-transform: scale(1.2,1.2);*/
+        /*transform: scale(1.2,1.2);*/
+    /*}*/
+/*}*/
+/*@-webkit-keyframes big {*/
+    /*100% {*/
+        /*-webkit-transform: scale(1.2,1.2);*/
+        /*-moz-transform: scale(1.2,1.2);*/
+        /*-ms-transform: scale(1.2,1.2);*/
+        /*-o-transform: scale(1.2,1.2);*/
+        /*transform: scale(1.2,1.2);*/
+    /*}*/
+/*}*/
+
+/*.jump {*/
+    /*-webkit-animation:pumb 0.5s linear 0.3s both;*/
+    /*-o-animation:pumb 0.5s linear 0.3s both;*/
+    /*animation:pumb 0.5s linear 0.3s both;*/
+/*}*/
+/*@keyframes pumb {*/
+   /*100% {*/
+        /*bottom: 0;*/
+   /*}*/
+/*}*/
+/*@-webkit-keyframes pumb {*/
+    /*100% {*/
+        /*bottom: 0;*/
+    /*}*/
+/*}*/
+/*---底部---*/
+
+#footer {
+    margin: 50px auto 0;
+    width:1010px ;
+    height: 18px ;
+    line-height: 18px;
+    background-color: black;
+    position: relative;
+}
+
+#footer .explain {
+    color: #f9f9f9;
+    font-size: 12px;
+}
+#footer .small {
+    position: absolute;
+    top:0;
+    right: 10px;
+}
+
+#footer .small li {
+    float: left;
+    color: white;
+}
+#footer .small li a {
+    color: white;
+    font-size: 12px;
+}
+#footer .small li a:hover {
+    color: silver;
+}
+
+#plate {
+    width: 1010px;
+    text-align: center;
+    margin: 10px auto 0;
+
+}
+
